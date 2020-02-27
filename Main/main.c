@@ -24,8 +24,7 @@ int main(int argc, char ** argv)
 
     curmode = check_args;
     wnd = newwin(LINES, COLS, 0,0);
-    init_pair(1, COLOR_WHITE, COLOR_BLUE);
-    init_pair(2, COLOR_WHITE, COLOR_RED);
+    init_pair(1, COLOR_BLACK, COLOR_WHITE);
     keypad(wnd,TRUE);
     optionWnd = derwin(wnd,3, COLS,0, 0);
     keypad(optionWnd, TRUE);
